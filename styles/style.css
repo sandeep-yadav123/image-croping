@@ -1,0 +1,61 @@
+.doc-preview-box.upload-file-preview .img-wrap{max-height: unset}
+.add-edit-comment{display: flex; justify-content: center; align-items: center;}
+.add-edit-comment h2{flex-grow: unset;}
+.add-edit-comment .comment > span{margin: 0 0 0 2rem; display: inline-block; cursor: pointer;}
+.add-edit-comment .delete{display: inline-block; background: url(../_global/styles/images/icons/bin.svg) no-repeat center; width: 2.4rem; height: 2.4rem; background-size: contain;}
+.add-page{height:42rem; overflow: auto; padding-right: 2rem;}
+.doc-view{margin: 0 3rem}
+.doc-preview-box .img-wrap{max-height: 42rem;} 
+.edit-section.disabled{margin: 6rem 0 0; opacity: 0.2;}
+.edit-section ul{margin: 0; padding: 0 20rem; display: flex; justify-content: space-around;}
+.edit-section ul li{list-style: none; padding: 1rem 0.5rem; border-radius: 0.5rem; display: flex; align-items: center; font-size: 1.2rem; color: #979797}
+.edit-section ul li.active{background: #1E74AA;}
+.edit-section.disabled ul li .icon{cursor: auto;}
+.edit-section ul li .icon{width: 4rem; height: 3rem; display: inline-block; cursor: pointer; background-repeat: no-repeat; background-position: center; background-size: contain;}
+.edit-section ul li .icon.zoom{background-image: url(../_global/styles/images/icons/zoom-icon.svg);}
+.edit-section ul li .icon.zoom:hover{background-image: url(../_global/styles/images/icons/zoom-blue.svg);}
+.edit-section ul li.active .icon.zoom{background-image: url(../_global/styles/images/icons/zoom-white.svg);}
+.edit-section ul li .icon.move{background-image: url(../_global/styles/images/icons/hand-icon.svg);}
+.edit-section ul li .icon.move:hover{background-image: url(../_global/styles/images/icons/hand-blue.svg);}
+.edit-section ul li.active .icon.move{background-image: url(../_global/styles/images/icons/hand-white.svg);}
+.edit-section ul li .icon.crop{background-image: url(../_global/styles/images/icons/crop-icon.svg);}
+.edit-section ul li .icon.crop:hover{background-image: url(../_global/styles/images/icons/crop-blue.svg);}
+.edit-section ul li.active .icon.crop{background-image: url(../_global/styles/images/icons/crop-white.svg);}
+.edit-section ul li .icon.rotate{background-image: url(../_global/styles/images/icons/rotate-grey.svg);}
+.edit-section ul li .icon.rotate:hover{background-image: url(../_global/styles/images/icons/rotate-blue.svg);}
+.edit-section ul li.active .icon.rotate{background-image: url(../_global/styles/images/icons/rotate-white.svg);}
+.edit-section ul li .icon.fullscreen{background-image: url(../_global/styles/images/icons/fit-icon.svg);}
+.edit-section ul li .icon.fullscreen:hover{background-image: url(../_global/styles/images/icons/fit-blue.svg);}
+.edit-section ul li.active .icon.fullscreen{background-image: url(../_global/styles/images/icons/fit-white.svg);}
+.edit-section ul li .icon.undo{background-image: url(../_global/styles/images/icons/undo-grey.svg);}
+.edit-section ul li .icon.undo:hover{background-image: url(s../_global/styles/images/icons/undo-blue.svg);}
+.edit-section ul li.active .icon.undo{background-image: url(../_global/styles/images/icons/undo-white.svg);}
+.edit-section ul li .icon.refresh{background-image: url(../_global/styles/images/icons/refresh-icon.svg);}
+.edit-section ul li .icon.refresh:hover{background-image: url(../_global/styles/images/icons/refresh-blue.svg);}
+.edit-section ul li.active .icon.refresh{background-image: url(../_global/styles/images/icons/refresh-white.svg);}
+.edit-section ul li .icon.docrefresh{background-image: url(../_global/styles/images/icons/doc-refresh.svg);}
+.edit-section ul li .icon.docrefresh:hover{background-image: url(../_global/styles/images/icons/doc-blue.svg) ;}
+.edit-section ul li.active .icon.docrefresh{background-image: url(../_global/styles/images/icons/doc-white.svg);}
+.edit-section ul li .icon.remove{background-image: url(../_global/styles/images/icons/bin.svg);}
+.edit-section ul li .icon.remove:hover{background-image: url(../_global/styles/images/icons/bin-blue.svg);}
+.edit-section ul li.active .icon.remove{background-image: url(../_global/styles/images/icons/bin-white.svg);}
+.add-doc{display: inline-block; position: relative;}
+.add-doc i.add{ width:9.7rem; height: 7.5rem; border: 0.3rem dashed #1E74AA;}
+.add-doc i.add:before{ background-image: url(../_global/styles/images/icons/plus.svg); background-position: center 1.6rem; }
+.add-doc i span{position: absolute; left: 0; right: 0; bottom: 20%; font-size: 1.4rem; font-family: 'OSSemiBold'; color:#1E74AA; text-align: center; font-style: normal;}
+.range-slider-panel{background: #FFFFFF; width: 70%; margin: 0 auto; position: relative;}
+.range-slider-panel .label{color: #979797; font-size: 1.4rem; text-transform: uppercase;}
+.range-slider-panel .close-panel{position: absolute; width: 1.4rem; height: 1.4rem; display: block; right: 1.2rem; top: 1.2rem; background:url(../_global/styles/images/icons/close-icon.svg) no-repeat center; cursor: pointer;}
+/* 46 line css cut and paste in line 50 (.range-slider-panel .toolbar-range) */
+.range-slider-panel .toolbar-range{border: 1px solid #C4C4C4; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); padding: 0.6rem 1.2rem;}
+.toolbar-range .toolbar-body{padding: 10px 0px; position: relative; display: flex;justify-content: space-evenly; align-items: center}
+.toolbar-range .toolbar-body > .btn{position: relative; min-width: auto;}
+.toolbar-range .toolbar-body{padding: 10px 0px; position: relative; display: flex;justify-content: space-evenly; align-items: center}
+.toolbar-range .toolbar-body > .btn:after{display: block; width: 1.8rem; height: 1.8rem; border-radius: 50%;}
+.toolbar-range .toolbar-body .btn-minus:after{content: ''; background:#979797 url(../_global/styles/images/icons/decrease.svg) no-repeat center;}
+.toolbar-range .toolbar-body .btn-plus:after{content: ''; background:#979797 url(../_global/styles/images/icons/increase.svg) no-repeat center;}
+.toolbar-range .toolbar-body .slider.slider-horizontal{width: calc(100% - 20%);}
+.toolbar-range .toolbar-body .slider.slider-horizontal .slider-track{background: #c4c4c4; border: 0rem solid;border-radius: 0rem;height: 1.4rem;box-shadow: 0 0.1rem 0.4rem 0 rgba(0,0,0,0.25);}
+.toolbar-range .toolbar-body .slider.slider-horizontal .slider-handle{background: #1e74aa;width: 3rem;height: 3rem; margin-top: -0.4rem;}
+.toolbar-range .toolbar-body .slider.slider-horizontal .slider-track .slider-selection{border-radius: 0rem; background: #1e74aa;}
+.toolbar-range .toolbar-body .slider-value{position: absolute; color:#1E74AA; left:calc(50% - 1.5rem); top:-1.5rem; font-size: 1.8rem; width:4rem; font-family: 'OSSemiBold'; text-align: center}

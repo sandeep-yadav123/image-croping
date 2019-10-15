@@ -1,0 +1,121 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache" >
+    <meta http-equiv="Pragma" content="no-cache" >
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" href="_global/xlib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="_global/xlib/bootstrap/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="_global/styles/app-style.css">
+    <link rel="stylesheet" href="cropper/cropper.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Select Document Scan | Enrollment</title>
+  </head>
+  <body>
+    <div class="modal fade" id="selectDocumentScanView" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="selectDocumentScanViewModal" aria-hidden="true">
+      <div class="modal-dialog modal-xxlg h-96" role="document" id="actions">
+        <div class="modal-content">
+          <div class="modal-header add-edit">
+            <div class="edit-id">
+              <h2>Driver’s License</h2>
+              <div class="add-idnumber">
+                <span class="">Add ID Number</span>
+                <div class="edit-idnumber hide">
+                  <form>
+                    <div class="form-group">
+                      <label for="idNumber">ID Number:</label>
+                      <input type="text" id="idNumber" value="009015253">
+                      <span class="edit"></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="d-inline-flex align-items-center">
+              <span class="icon-md help mr-20"></span>
+              <i class="icon-sm modal-close" data-dismiss="modal"></i>
+            </div>
+          </div>
+          <div class="modal-body docs-buttons">
+            <div class="detail-view">
+              <div class="add-page">
+                 <input type="file" class="sr-only" id="inputImage" name="file" accept="image/*" style="display: none;">
+                <a href="javascript:;" class="add-doc">
+                  <i class="icon add"><span>Add Page</span></i>
+                </a>
+                <div class="page-wrap">
+                  <div class="pages"> 
+                    <div class="img-wrap">
+                      <!-- <img src="Desert.jpg" alt="Document"> -->
+                      <div class="img-preview preview-xs"></div>
+                    </div>
+                    <span class="page-number">Page 1</span>
+                  </div>
+                </div>
+              </div>
+              <div class="doc-view">
+                <div class="doc-preview-box">
+                  <div class="img-wrap">
+                    <img id="document_img" src="Desert.jpg" alt="Document" class="">
+                    <span class="default-text">Place document in scanner and click Add Page to begin scan.</span>
+                  </div>
+                </div>
+                <div class="edit-section">
+                  <span class="hide">Page 1</span>
+                  <ul class="tool-item">
+                    <li class="active"><span class="zoom icon btn-zoom-box"></span></li>
+                    <li><span class="move icon"></span></li>
+                    <li><span class="crop icon"></span></li>
+                    <li><span class="rotate icon btn-rotate-box"></span></li>
+                    <li><span class="fullscreen icon"></span></li>
+                    <li><span class="undo icon"></span></li>
+                    <li><span class="refresh icon"></span></li>
+                    <li><span class="docrefresh icon"></span></li>
+                    <li><span class="remove icon"></span></li>
+                  </ul>
+                  <div class="range-slider-panel">
+                      <div class="toolbar-range zoom range-slider-zoom" style="display: none;"> 
+                          <span class="label">Zoom</span> 
+                          <span class="close-panel zoom-close"></span>
+                          <div class="toolbar-body "> 
+                              <button id="btnMinus" class="btn btn-minus"></button>
+                              <span id="zoomValue" class="slider-value">0</span> 
+                              <input id="zoomRange" type="text" data-slider-min="1" data-slider-max="100" data-slider-step="1" data-slider-value="1">
+                              <button id="btnPlus" class="btn btn-plus"></button> 
+                          </div>
+                      </div>
+                      <div class="toolbar-range rotate range-slider-rotate" style="display: none;"> 
+                          <span class="label">Rotate</span>
+                          <span class="close-panel"></span>
+                          <div class="toolbar-body"> 
+                            <button id="btnMinusRot" class="btn btn-minus"></button>
+                            <span id="rotateValue" class="slider-value">0</span> 
+                            <input id="rotate" type="text" data-slider-min="-50" data-slider-max="50" data-slider-step="1" data-slider-value="1" /> 
+                            <button id="btnPlusRot" class="btn btn-plus"></button> 
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+              <button type="button" id="btnCancel" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" id="btnSave" class="btn btn-primary disabled">Save Document</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="_global/xlib/jquery/jquery.min.js"></script>
+      <script src="_global/xlib/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="_global/xlib/bootstrap/js/bootstrap-slider.min.js"></script>
+      <script src="_global/scripts/utils.js"></script>
+      <script src="cropper/cropper.js"></script>
+      <script src="photoUtil.js"></script>
+      <script src="selectDocumentScanView.js"></script>
+    </body>
+    </html>
